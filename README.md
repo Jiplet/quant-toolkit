@@ -1,18 +1,17 @@
 # quant-toolkit
 
-Conditional-density forecasting and risk-based signals for G8 FX, NQ, and Gold.
-Methodologies rewritten from IMF quant research for discretionary retail swing and intraday use.
-See `docs/source-attribution.md` for academic provenance.
+Personal Python toolkit for conditional-density forecasting and risk-based trading signals on G8 FX, NQ, and Gold.
+See `docs/methodology-references.md` for academic provenance.
 
 ---
 
 ## Roadmap
 
-| Phase | Package | Maps from (Lafarguette) | Status |
-|-------|---------|------------------------|--------|
-| 1 | `density-engine` | `gar` + `cqsampling` | Scaffolded, awaiting approval to port |
-| 2 | `signal-layer` | `varfxi` + `quantileproj` | Scaffolded |
-| 3 | `portfolio-layer` | `densproj` + `gic-junior-quant-pc-recruitment` | Scaffolded |
+| Phase | Package | Based on | Status |
+|-------|---------|----------|--------|
+| 1 | `density-engine` | Adrian, Boyarchenko & Giannone (2019); Koenker & Bassett (1978); Chernozhukov, Fernandez-Val & Galichon (2010); Schmidt & Zhu (2016) | Scaffolded |
+| 2 | `signal-layer` | Jorda (2005); Jorion (2007) | Scaffolded |
+| 3 | `portfolio-layer` | Mean-variance and risk-parity portfolio construction | Scaffolded |
 
 ---
 
@@ -73,6 +72,5 @@ packages/
 
 ## Attribution
 
-All code in this repository is original. Methodologies are adapted from published academic research
-by Romain Lafarguette and co-authors at the IMF. Methodological credit is preserved in module
-docstrings where applicable. See `docs/source-attribution.md` for per-repo license status.
+All code in this repository is original. Methodologies are grounded in published academic research.
+See `docs/methodology-references.md` for full references.

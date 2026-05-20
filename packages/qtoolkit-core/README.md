@@ -10,10 +10,9 @@ Provides the shared primitives used by all other packages:
 - Configuration management (API keys, ticker lists, factor set)
 - Common utilities: logging, date handling, validation
 
-## Source mapping
+## Based on
 
-This package has no direct Lafarguette repo equivalent. It is purpose-built
-infrastructure to support the retail adaptation of academic code.
+No specific method paper. Purpose-built shared infrastructure for the toolkit.
 
 ## Planned modules
 
@@ -24,4 +23,4 @@ infrastructure to support the retail adaptation of academic code.
 
 ## Status
 
-Scaffold only. No code ported yet.
+Scaffold only. No code written yet.
