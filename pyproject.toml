@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quant-toolkit"
+version = "0.0.1"
+description = "Conditional-density forecasting and risk-based signals for G8 FX, NQ, and Gold"
+requires-python = ">=3.12"
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B"]
+ignore = []
+
+[tool.pytest.ini_options]
+testpaths = ["packages"]

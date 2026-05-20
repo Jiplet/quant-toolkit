@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qtoolkit-core"
+version = "0.0.1"
+description = "Shared data loaders, OHLC types, and config for quant-toolkit"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/qtoolkit_core"]

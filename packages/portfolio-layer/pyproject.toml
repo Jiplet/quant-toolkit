@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "portfolio-layer"
+version = "0.0.1"
+description = "Density projection and portfolio construction (Phase 3)"
+requires-python = ">=3.12"
+dependencies = [
+    "qtoolkit-core",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/portfolio_layer"]

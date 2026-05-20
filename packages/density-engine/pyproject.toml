@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "density-engine"
+version = "0.0.1"
+description = "Conditional density estimation for FX, NQ, and Gold (Phase 1)"
+requires-python = ">=3.12"
+dependencies = [
+    "qtoolkit-core",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/density_engine"]

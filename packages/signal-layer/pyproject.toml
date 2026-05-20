@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "signal-layer"
+version = "0.0.1"
+description = "FX volatility and quantile projection signals (Phase 2)"
+requires-python = ">=3.12"
+dependencies = [
+    "qtoolkit-core",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/signal_layer"]
